@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --forest-900: #0a211a;
+    --forest-800: #0f382c;
+    --forest-700: #164e3f;
+    --forest-600: #1e6753;
+    --forest-500: #29826a;
+    --gold-600: #a98336;
+    --gold-500: #c5a059;
+    --gold-400: #d8b775;
+    --gold-300: #ebd39b;
+    --ivory-50: #fcfbfa;
+    --ivory-100: #f7f5ef;
+    --ivory-200: #eee9dc;
+    --charcoal-900: #161a1d;
+    --charcoal-800: #22272b;
+    --charcoal-700: #333a41;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--ivory-50);
+    color: var(--charcoal-800);
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+@layer utilities {
+  .bg-forest-900 { background-color: #0a211a; }
+  .bg-forest-800 { background-color: #0f382c; }
+  .bg-forest-700 { background-color: #164e3f; }
+  .text-forest-900 { color: #0a211a; }
+  .text-forest-800 { color: #0f382c; }
+  .text-forest-700 { color: #164e3f; }
+  .border-forest-800 { border-color: #0f382c; }
+
+  .bg-gold-500 { background-color: #c5a059; }
+  .bg-gold-600 { background-color: #a98336; }
+  .text-gold-500 { color: #c5a059; }
+  .text-gold-600 { color: #a98336; }
+  .border-gold-500 { border-color: #c5a059; }
+
+  .bg-ivory-50 { background-color: #fcfbfa; }
+  .bg-ivory-100 { background-color: #f7f5ef; }
+  .bg-ivory-200 { background-color: #eee9dc; }
+
+  .font-serif-luxury {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+
+  .hotel-shadow {
+    box-shadow: 0 10px 30px -5px rgba(15, 56, 44, 0.08), 0 4px 12px -2px rgba(15, 56, 44, 0.04);
+  }
+
+  .hotel-card-shadow {
+    box-shadow: 0 18px 40px -10px rgba(15, 56, 44, 0.07);
+  }
+}
